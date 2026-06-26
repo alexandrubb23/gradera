@@ -1,5 +1,6 @@
 import { SiReact, SiTypescript, SiVite, SiAnthropic } from "react-icons/si";
 import { TechBadge } from "@/components/TechBadge/TechBadge";
+import type { TechBadgeProps } from "@/components/TechBadge/TechBadge";
 import pkg from "../../../package.json";
 import styles from "./TechStack.module.css";
 
@@ -30,7 +31,7 @@ const stack = [
     version: "latest",
     color: "#D97757",
   },
-];
+] satisfies TechBadgeProps[];
 
 export const TechStack = () => (
   <div className={styles.badges}>
