@@ -1,7 +1,7 @@
 import type { IconType } from "react-icons";
 import styles from "./TechBadge.module.css";
 
-type TechBadgeProps = {
+export type TechBadgeProps = {
   icon: IconType;
   label: string;
   version: string;
